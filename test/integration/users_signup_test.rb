@@ -33,7 +33,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
 
     follow_redirect!
-    assert_equal flash[:success], 'Welcome to the x-Clone!'
+    assert_equal flash[:success], 'Welcome to the X-Clone!'
     assert_template 'users/show'
   end
 end
