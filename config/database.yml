@@ -26,6 +26,6 @@ production:
   pool: 5
   host: localhost
   port: 5432
-  database: project_production
+  database: x_clone
   username: postgres
   password: <% ENV.fetch("POSTGRES_PASSWORD", 'fake') %>
