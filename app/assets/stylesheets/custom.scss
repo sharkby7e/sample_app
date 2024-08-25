@@ -88,37 +88,37 @@ p {
 /* dropdown list */
 .dropdown-list {
   position: absolute;
-  top: 100%; /* Positions the menu below the dropdown toggle */
-  left: 0; /* Aligns the menu with the left edge of the toggle */
-  z-index: 10; /* Ensures the menu appears above other content */
-  float: left; /* Ensures the menu floats to the left */
-  min-width: 100px; /* Minimum width of the dropdown menu */
-  padding: .5rem 0; /* Padding inside the dropdown menu */
-  margin: .125rem 0 0; /* Margin to prevent overlap with the toggle */
-  font-size: 1.5rem; /* Font size for dropdown items */
-  color: #212529; /* Text color for dropdown items */
-  text-align: left; /* Aligns text to the left */
-  background-color: #fff; /* Background color of the menu */
-  border: 1px solid rgba(0, 0, 0, 0.15); /* Border around the menu */
-  border-radius: .25rem; /* Rounded corners */
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  float: left;
+  min-width: 100px;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1.5rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: .25rem;
 }
 
 .dropdown-list .dropdown-link {
-  display: block; /* Ensures the items are block-level elements */
-  width: 100%; /* Makes the items fill the width of the menu */
-  padding: .25rem 1.5rem; /* Padding inside each dropdown item */
-  clear: both; /* Ensures no floating issues */
-  font-weight: 400; /* Normal font weight */
-  color: #212529; /* Text color */
-  text-align: inherit; /* Inherits text alignment */
-  white-space: nowrap; /* Prevents text wrapping */
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
 }
 
 .dropdown-list .dropdown-link:hover,
 .dropdown-list .dropdown-link:focus {
-  color: #16181b; /* Text color on hover/focus */
-  text-decoration: none; /* Removes underline */
-  background-color: #f8f9fa; /* Background color on hover/focus */
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
 }
 
 /* footer */
