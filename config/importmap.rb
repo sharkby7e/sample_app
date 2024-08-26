@@ -13,3 +13,4 @@ pin 'bootstrap', to: 'bootstrap.min.js', preload: true
 pin 'stimulus-use' # @0.51.3
 
 pin_all_from 'app/javascript/controllers', under: 'controllers'
+pin "@hotwired/turbo-rails", to: "turbo.min.js"
