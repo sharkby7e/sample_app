@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
+    <%= link_to "x-clone", root_path, id: "logo" %>
     <nav>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -11,7 +11,8 @@
         </button>
       </div>
 
-      <ul <%= 'data-controller=dropdown' if logged_in? %> class="nav navbar-nav navbar-right collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul
+        <%= 'data-controller=dropdown' if logged_in? %> class="nav navbar-nav navbar-right collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
