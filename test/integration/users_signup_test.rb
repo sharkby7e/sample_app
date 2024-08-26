@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
@@ -35,5 +37,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_equal flash[:success], 'Welcome to the X-Clone!'
     assert_template 'users/show'
+    assert is_logged_in?
   end
 end
