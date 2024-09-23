@@ -4,3 +4,8 @@ finch:
   name: Finch Keating
   email: finch@keating.com
   password_digest: <%= User.digest('catnip') %>
+
+basil:
+  name: Basil Keating
+  email: basil@keating.com
+  password_digest: <%= User.digest('catnip') %>
