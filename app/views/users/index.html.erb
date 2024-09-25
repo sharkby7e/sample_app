@@ -1,5 +1,12 @@
-<div>
-  <% @users.each do |u| %>
-    <%= gravatar_for u %>
+<% provide(:title, "All users") %>
+<h1>All users</h1>
+
+<%= will_paginate @users, page_links: false, previous_label: "←", link_separator: "#{@users.current_page} / #{@users.total_pages}", next_label: "→" %>
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= gravatar_for user, size: 50 %>
+      <%= link_to user.name, user %>
+    </li>
   <% end %>
-</div>
+</ul>

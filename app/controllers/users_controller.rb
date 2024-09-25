@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i[edit update]
+  before_action :logged_in_user, only: %i[index edit update]
   before_action :correct_user, only: %i[edit update]
 
   def index
-    @users = User.all
+    @page = [params.fetch(:page, 1).to_i, 25].min
+    @users = User.paginate({ page: @page, per_page: 24 })
   end
 
   def show
