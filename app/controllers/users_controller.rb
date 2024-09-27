@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def index
     @page = [params.fetch(:page, 1).to_i, 25].min
-    @users = User.paginate({ page: @page, per_page: 24 })
+    @users = User.paginate({ page: @page })
   end
 
   def show
