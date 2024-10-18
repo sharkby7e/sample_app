@@ -4,6 +4,7 @@ finch:
   name: Finch Keating
   email: finch@keating.com
   password_digest: <%= User.digest('catnip') %>
+  admin: true
 
 basil:
   name: Basil Keating
