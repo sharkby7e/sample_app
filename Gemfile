@@ -6,7 +6,7 @@ ruby '3.2.2'
 
 gem 'bcrypt', '3.1.13'
 gem 'bootstrap-sass', '3.4.1'
-gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
+gem 'faker'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'pg'
