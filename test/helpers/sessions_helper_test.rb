@@ -5,6 +5,7 @@ class SessionsHelperTest < ActionView::TestCase
     @user = users(:finch)
     remember(@user)
   end
+
   test 'current_user returns right user when session is nil' do
     assert_equal @user, current_user
     assert is_logged_in?

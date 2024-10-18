@@ -6,6 +6,7 @@ ruby '3.2.2'
 
 gem 'bcrypt', '3.1.13'
 gem 'bootstrap-sass', '3.4.1'
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'pg'
@@ -16,6 +17,7 @@ gem 'sprockets-rails'
 gem 'sqlite3', '~> 1.4'
 gem 'stimulus-rails'
 gem 'turbo-rails'
+gem 'will_paginate', '~> 4.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
